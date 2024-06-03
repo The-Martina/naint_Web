@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ñaint</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="title">
+    ñaint
+  </div>
+
+  <div id="toolbar" class="toolbar">
+    <div id="color-preview" class="color-preview" style="background-color: #2D2D2A;"></div>
+    <input type="color" id="color-picker" class="color-picker">
+    <div id="recent-colors" class="recent-colors">
+      <!-- Recent color buttons will be added here dynamically -->
+    </div>
+    <label for="brush-slider" class="brush-label">Brush Size:</label>
+    <input type="range" id="brush-slider" class="brush-slider" min="1" max="20" value="2">
+  </div>
+  <div id="toolbar" class="toolbar">
+    <button id="clear-button" class="button">Clear</button>
+    <button id="undo-button" class="button"></button>
+    <button id="save-button" class="button">Save</button>
+    <button id="load-button" class="button">Load</button>
+    <button id="change-resolution-button" class="button">Change Resolution</button>
+    <button id="change-background-color-button" class="button">Change Background Color</button>
+    <button id="transparent-background-button" class="button">Transparent Background</button>
+  </div>
+  <canvas id="canvas" class="canvas" width="800" height="600"></canvas>
+  <script src="script.js"></script>
+</body>
+
+</html>
